@@ -1,0 +1,13 @@
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local ScreenGui = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+ScreenGui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+Button.Size = UDim2.new(0, 200, 0, 50)
+Button.Position = UDim2.new(0.5, -100, 0.5, -25)
+Button.Text = "By L0_VE. Autoclick to loop."
+Button.Parent = ScreenGui
+Button.MouseButton1Click:Connect(function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").TrillionaireCity.TrillionaireOrbs.Trillionaire.Outside.Position)
+    print("orb collected")
+end)
