@@ -1,3 +1,4 @@
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1900, 99, 6270)
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
 local ScreenGui = Instance.new("ScreenGui")
